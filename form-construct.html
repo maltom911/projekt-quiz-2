@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form construct</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Font Awesome Stylesheet -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <a href="index.html" class="btn btn-info btn-lg" role="button">Powrót do strony głównej</a>
+        <div class="form">
+            <p>Zarejestruj się:</p>
+            <label>Podaj login:<input type="text" placeholder="Wprowadź login" name="uname" required></label>
+            <br>
+            <label>Podaj hasło:</label><br>
+            <input id="txtPassword" type="password" placeholder="Wprowadź hasło" name="psw" required>
+            <label>Pokaż hasło:</label>
+            <input type="checkbox" id="chkShowPassword" />
+            <div class="password-strength">
+                <p>Siła hasła:</p>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <p class="to-next">Kliknij aby przejść dalej</p><br>
+            <div class="arrow">
+                <a href="form-construct-2.html" class="fa fa-arrow-circle-right" id="enableLink"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
