@@ -140,34 +140,6 @@ $(document).ready(function () {
         }
     ];
 
-    btnShow.click(function () {
-        paragraphs[getClickedIndex()].object.show(2000);
-        incrementClickedIndex();
-    });
-
-    $('#is-danger').click(function () {
-        console.log(getCurrentQuestion());
-
-        if (getCurrentQuestion().isDanger) {
-            getCurrentQuestion().isCorrect = true;
-            getCurrentQuestion().object.addClass('success');
-        } else {
-            getCurrentQuestion().object.hide(2000);
-            getCurrentQuestion().object.addClass('fail');
-        }
-    });
-
-    $('#not-danger').click(function () {
-        console.log(getCurrentQuestion());
-
-        if (!getCurrentQuestion().isDanger) {
-            getCurrentQuestion().isCorrect = true;
-            getCurrentQuestion().object.hide(2000);
-            getCurrentQuestion().object.addClass('success');
-        } else {
-            getCurrentQuestion().object.addClass('fail');
-        }
-    });
 
     function getCurrentQuestion() {
         return paragraphs[getCurrentClickedIndex()];
@@ -237,11 +209,11 @@ $(document).ready(function () {
     var toolsParagraphs = [1, 2, 3, 4, 5, 6];
 
     /*    toolsParagraphs[0] = $('.first-paragraph');
-        toolsParagraphs[1] = $('.second-paragraph');
-        toolsParagraphs[2] = $('.third-paragraph');
-        toolsParagraphs[3] = $('.fourth-paragraph');
-        toolsParagraphs[4] = $('.fifth-paragraph');
-        toolsParagraphs[5] = $('.sixth-paragraph');*/
+     toolsParagraphs[1] = $('.second-paragraph');
+     toolsParagraphs[2] = $('.third-paragraph');
+     toolsParagraphs[3] = $('.fourth-paragraph');
+     toolsParagraphs[4] = $('.fifth-paragraph');
+     toolsParagraphs[5] = $('.sixth-paragraph');*/
     var red = $('.red-style');
     var first = $('.first-paragraph');
     var second = $('.second-paragraph');
@@ -272,7 +244,7 @@ $(document).ready(function () {
     });
 
     fifth.click(function () {
-       /* red.addClass('make-it-red');*/
+        /* red.addClass('make-it-red');*/
         alert('Spróbuj jeszcze raz !');
         showAll();
         /*red.removeClass('make-it-red');*/
@@ -298,32 +270,32 @@ $(document).ready(function () {
     $('.icon-4-hidden').hide();
     $('.icon-5-hidden').hide();
     $('.icon-9-hidden').hide();
-    
+
     /*hiding clicks*/
     $('.icon-1').click(function () {
-       $('.icon-1').hide(2000);
-         $('.icon-1-hidden').show(2000);
-    }); 
-    
-      $('.icon-4').click(function () {
-       $('.icon-4').hide(2000);
-         $('.icon-4-hidden').show(2000);
-    }); 
-    
-      $('.icon-5').click(function () {
-       $('.icon-5').hide(2000);
-         $('.icon-5-hidden').show(2000);
-    }); 
-    
-      $('.icon-9').click(function () {
-       $('.icon-9').hide(2000);
-         $('.icon-9-hidden').show(2000);
-    }); 
+        $('.icon-1').hide(2000);
+        $('.icon-1-hidden').show(2000);
+    });
+
+    $('.icon-4').click(function () {
+        $('.icon-4').hide(2000);
+        $('.icon-4-hidden').show(2000);
+    });
+
+    $('.icon-5').click(function () {
+        $('.icon-5').hide(2000);
+        $('.icon-5-hidden').show(2000);
+    });
+
+    $('.icon-9').click(function () {
+        $('.icon-9').hide(2000);
+        $('.icon-9-hidden').show(2000);
+    });
     /*alert clicks*/
-      $('.icon-2, .icon-3, .icon-5, .icon-6, .icon-7, .icon-8, .icon-10, .icon-11, .icon-12, .icon-13').click(function () {
-       alert('Ta aplikacja nie wpływa na bezpieczeństwo korzystania z bankowości mobilnej !')
-    }); 
-    
-    
+    $('.icon-2, .icon-3, .icon-5, .icon-6, .icon-7, .icon-8, .icon-10, .icon-11, .icon-12, .icon-13').click(function () {
+        alert('Ta aplikacja nie wpływa na bezpieczeństwo korzystania z bankowości mobilnej !')
+    });
+
+
 });
 /*Safe Smartfon-End*/
