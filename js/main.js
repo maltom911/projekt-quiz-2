@@ -292,10 +292,114 @@ $(document).ready(function () {
         $('.icon-9-hidden').show(2000);
     });
     /*alert clicks*/
-    $('.icon-2, .icon-3, .icon-5, .icon-6, .icon-7, .icon-8, .icon-10, .icon-11, .icon-12, .icon-13').click(function () {
-        alert('Ta aplikacja nie wpływa na bezpieczeństwo korzystania z bankowości mobilnej !')
+      $('.alert-show').click(function () {
+       alert('Ta aplikacja nie wpływa na bezpieczeństwo korzystania z bankowości mobilnej !')
+    });
+    /*hide labels*/
+     $('.label-1, .label-2, .label-3, .label-4, .label-5, .label-6, .label-7, .label-8, .label-9, .label-10, .label-11, .label-12, .label-13').hide();
+    /*mouseover label*/
+
+     $('.icon-1').mouseenter(function(){
+        $('.label-1').show();
+    });
+     $('.icon-1').mouseleave(function(){
+        $('.label-1').hide();
     });
 
+       $('.icon-2').mouseenter(function(){
+        $('.label-2').show();
+    });
 
+      $('.icon-2').mouseleave(function(){
+        $('.label-2').hide();
+    });
+
+    $(' .icon-3').mouseenter(function(){
+        $('.label-3').show();
+    });
+
+      $('.icon-3').mouseleave(function(){
+        $('.label-3').hide();
+    });
+
+     $('.icon-4').mouseenter(function(){
+        $('.label-4').show();
+    });
+
+     $('.icon-4').mouseleave(function(){
+        $('.label-4').hide();
+    });
+
+     $(' .icon-5').mouseenter(function(){
+        $('.label-5').show();
+    });
+
+     $('.icon-5').mouseleave(function(){
+        $('.label-5').hide();
+    });
+
+      $(' .icon-6').mouseenter(function(){
+        $('.label-6').show();
+    });
+
+     $('.icon-6').mouseleave(function(){
+        $('.label-6').hide();
+    });
+
+      $(' .icon-7').mouseenter(function(){
+        $('.label-7').show();
+    });
+
+     $('.icon-7').mouseleave(function(){
+        $('.label-7').hide();
+    });
+
+      $(' .icon-8').mouseenter(function(){
+        $('.label-8').show();
+    });
+
+     $('.icon-8').mouseleave(function(){
+        $('.label-8').hide();
+    });
+
+      $('.icon-9').mouseenter(function(){
+        $('.label-9').show();
+    });
+
+     $('.icon-9').mouseleave(function(){
+        $('.label-9').hide();
+    });
+
+      $(' .icon-10').mouseenter(function(){
+        $('.label-10').show();
+    });
+
+     $('.icon-10').mouseleave(function(){
+        $('.label-10').hide();
+    });
+
+      $(' .icon-11').mouseenter(function(){
+        $('.label-11').show();
+    });
+
+     $('.icon-11').mouseleave(function(){
+        $('.label-11').hide();
+    });
+
+      $(' .icon-12').mouseenter(function(){
+        $('.label-12').show();
+    });
+
+     $('.icon-12').mouseleave(function(){
+        $('.label-12').hide();
+    });
+
+      $(' .icon-13').mouseenter(function () {
+       $('.label-13').show();
+    });
+
+    $('.icon-13').mouseleave(function(){
+        $('.label-13').hide();
+    });
 });
 /*Safe Smartfon-End*/

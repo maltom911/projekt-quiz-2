@@ -1,607 +1,585 @@
-body {
-    margin: 0;
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
-    color: #333;
-    height: 100vh;
-    font-size: 24px;
-}
+    body {
+        margin: 0;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 700;
+        color: #333;
+        height: 100vh;
+        font-size: 24px;
+    }
+    /*General Styles*/
+    
+    .main-container {
+        background-color: rgba(211, 211, 211, 0.2);
+        height: 100%;
+    }
+    /*General Styles End*/
+    /*Main Site Styles*/
+    
+    #container-index {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .link {
+        margin-top: 30px;
+        background-color: #4ca1af;
+        color: white;
+        padding: 20px 0px;
+        text-align: center;
+        width: 100%;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    h1 {
+        font-weight: 700;
+        font-size: 50px;
+        text-align: center;
+    }
+    /*Main Site Styles End*/
+    /*Form Construct Styles*/
+    
+    .form {
+        width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 18px solid rgba(0, 0, 0, 0.2);
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background-image: linear-gradient(120deg, #4ca1af 0%, #c4e0e5 100%);
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+    .form p {
+        padding-bottom: 34px;
+        font-size: 48px;
+        margin: 0;
+    }
+    
+    .form input {
+        width: 100%;
+        height: 44px;
+        margin-bottom: 22px;
+    }
+    
+    .paswword-strength {
+        width: 100%;
+    }
+    
+    .line {
+        display: inline-block;
+        width: 40px;
+        height: 12px;
+        border: 1px solid black;
+        border-radius: 10%;
+        margin-left: 9px;
+    }
+    
+    .password-strength p {
+        display: inline-block;
+        padding: 0;
+        font-size: 24px;
+    }
+    
+    .arrow {
+        display: inline-block;
+    }
+    
+    .arrow .fa {
+        text-decoration: none;
+        text-decoration: none;
+        font-size: 80px;
+        padding-left: 113px;
+    }
+    
+    .form .to-next {
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 400;
+        padding: 10px 0px 0px 36px;
+    }
+    
+    .line-red {
+        background-color: red;
+    }
+    
+    .line-yellow {
+        background-color: yellow;
+    }
+    
+    .line-green {
+        background-color: green;
+    }
+    
+    .form input[type="checkbox"] {
+        width: 15%;
+        height: 27px;
+        position: absolute;
+    }
+    
+    .image-container {
+        height: 740px;
+    }
+    
+    .image {
+        background-image: url(../img/Rysunek_1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+        ;
+    }
+    
+    .enabledLink {
+        color: green;
+    }
+    
+    .enabledLink:hover {
+        color: forestgreen;
+    }
+    /*Form Construct 2 Styles*/
+    
+    .image-2 {
+        background-image: url(../img/Rysunek_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+    }
+    
+    .construct-2 p:first-child {
+        margin-top: 115px;
+        color: red;
+        font-size: 55px;
+    }
+    
+    .construct-2 p:nth-child(2) {
+        font-size: 30px;
+        text-align: justify;
+    }
+    /*Form Construct 2 Styles End*/
+    /*Form Construct Styles End*/
+    /*Form Password Strength Styles*/
+    
+    .smartfon-container {
+        height: 540px;
+        width: 330px;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+        border: 5px solid black;
+        border-radius: 10%;
+        background-color: cadetblue;
+    }
+    
+    .main-container-two {
+        background-color: rgba(211, 211, 211, 0.2);
+        height: 100%;
+    }
+    
+    .smartfon-screen {
+        height: 440px;
+        width: 90%;
+        top: 46px;
+        bottom: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        background-color: lightblue;
+        border-radius: 3%;
+    }
+    
+    .smartfon-button {
+        position: absolute;
+        width: 20%;
+        text-align: center;
+        height: 32px;
+        border: 3px solid black;
+        background-color: #ffe766;
+        border-radius: 25%;
+        top: 93%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .smartfon-form {
+        width: 100%;
+        position: absolute;
+        padding: 15px;
+        line-height: 50px;
+    }
+    
+    .smartfon-form p {
+        line-height: normal;
+    }
+    
+    .smartfon-form input {
+        width: 100%;
+    }
+    
+    .smartfon-form {
+        font-size: 18px;
+    }
+    
+    .password-strength p {
+        font-size: 18px;
+    }
+    
+    .smartfon-form .password-strength .line {
+        width: 53px;
+        margin-left: 3px;
+    }
+    /*Form Password Strength Styles End*/
+    /*History Styles*/
+    
+    #content h2 {
+        font-weight: 700;
+        text-align: center;
+        text-decoration: underline;
+        text-align: justify;
+        font-size: 23px;
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    /* Main content area */
+    
+    #content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    /* Slots for final card positions */
+    
+    #cardSlots {
+        margin: 50px auto 0 auto;
+        background-image: linear-gradient(120deg, #4ca1af 0%, #c4e0e5 100%);
+    }
+    /* The initial pile of unsorted cards */
+    
+    #cardPile {
+        margin: 0 auto;
+        background-image: linear-gradient(120deg, #4ca1af 0%, #c4e0e5 100%);
+    }
+    
+    #cardSlots,
+    #cardPile {
+        width: 1000px;
+        height: 230px;
+        padding: 20px;
+        border: 2px solid #333;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+        -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+        box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
+    }
+    /* Individual cards and slots */
+    
+    #cardSlots div,
+    #cardPile div {
+        float: left;
+        width: 230px;
+        height: 185px;
+        padding: 10px;
+        padding-bottom: 0;
+        border: 2px solid #333;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        margin: 0 0 0 10px;
+        background-color: lightblue;
+    }
+    
+    #cardSlots div:first-child,
+    #cardPile div:first-child {
+        margin-left: 0;
+    }
+    
+    #cardSlots div.hovered {
+        background: #aaa;
+    }
+    
+    #cardSlots div {
+        border-style: dashed;
+    }
+    
+    #cardPile div {
+        background-color: lightblue;
+        color: black;
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    #cardPile div.ui-draggable-dragging {
+        -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+        -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+        box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+    }
+    /* Individually coloured cards */
+    
+    #card1.correct {
+        background: palevioletred;
+    }
+    
+    #card2.correct {
+        background: lightgreen;
+    }
+    
+    #card3.correct {
+        background: orangered;
+    }
+    
+    #card4.correct {
+        background: aquamarine;
+    }
+    /* "You did it!" message */
+    
+    #successMessage {
+        position: absolute;
+        left: 580px;
+        top: 250px;
+        width: 0;
+        height: 0;
+        z-index: 100;
+        background: #dfd;
+        border: 2px solid #333;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+        -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+        box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
+        padding: 20px;
+    }
+    /*History Styles End*/
+    /*Form Password Strength End*/
+    /*Danger Styles*/
+    
+    #danger h3 {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: underline;
+        padding-bottom: 45px;
+    }
+    
+    #danger .row .col-md-4 {
+        margin-bottom: 30px;
+    }
+    
+    #danger-paragraphs p {
+        font-size: 20px;
+    }
+    
+    #danger-paragraphs div {
+        margin-top: 5px;
+        height: 50px;
+        border: 3px solid black;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+    /*Danger Styles End*/
+    /*Safe Smartfon Styles*/
+    
+    .safe-smartfon-header {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    #container-safe-smartfon {
+        margin: 34px;
+    }
+    
+    .main-smartfon-container {
+        height: 600px;
+        position: relative;
+    }
+    
+    .smartfon-container-2 {
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        height: 640px;
+        width: 330px;
+        border: 5px solid black;
+        border-radius: 10%;
+        background-color: cadetblue;
+    }
+    
+    .smartfon-screen-2 {
+        height: 84%;
+        width: 90%;
+        top: 46px;
+        bottom: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        background-color: lightblue;
+        border-radius: 3%;
+    }
+    
+    .smartfon-form img {
+        height: 120px;
+        width: 120px;
+        display: inline-block;
+        border-radius: 10%;
+        text-align: center;
+        margin: 5px 69px 0 69px;
+    }
+    
+    .main-icons-container {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .icon-container {
+        margin: 16px;
+        height: 120px;
+        width: 120px;
+        display: inline-block;
+    }
+    
+    .icon-container img {
+        height: 120px;
+        width: 120px;
+        display: inline-block;
+        border-radius: 10%;
+        cursor: pointer;
+    }
+    
+    .icon-container p {
+        font-size: 17px;
+        display: inline-block;
+        position: absolute;
+        height: 26px;
+        border: 2px solid;
+        border-radius: 10%;
+        margin: 0;
+        background: white;
+        text-align: center;
+        width: 16%;
+    }
 
-
-/*General Styles*/
-
-.main-container {
-    background-color: rgba(211, 211, 211, 0.2);
-    height: 100%;
-}
-
-
-/*General Styles End*/
-
-
-/*Main Site Styles*/
-
-#container-index {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.link {
-    margin-top: 30px;
-    background-color: #4ca1af;
-    color: white;
-    padding: 20px 0px;
-    text-align: center;
-    width: 100%;
-    text-decoration: none;
-    display: inline-block;
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 50px;
-    text-align: center;
-}
-
-
-/*Main Site Styles End*/
-
-
-/*Form Construct Styles*/
-
-.form {
-    width: 450px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 18px solid rgba(0, 0, 0, 0.2);
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    background-image: linear-gradient(120deg, #4ca1af 0%, #c4e0e5 100%);
-    padding-left: 60px;
-    padding-right: 60px;
-}
-
-.form p {
-    padding-bottom: 34px;
-    font-size: 48px;
-    margin: 0;
-}
-
-.form input {
-    width: 100%;
-    height: 44px;
-    margin-bottom: 22px;
-}
-
-.paswword-strength {
-    width: 100%;
-}
-
-.line {
-    display: inline-block;
-    width: 40px;
-    height: 12px;
-    border: 1px solid black;
-    border-radius: 10%;
-    margin-left: 9px;
-}
-
-.password-strength p {
-    display: inline-block;
-    padding: 0;
-    font-size: 24px;
-}
-
-.arrow {
-    display: inline-block;
-}
-
-.arrow .fa {
-    text-decoration: none;
-    text-decoration: none;
-    font-size: 80px;
-    padding-left: 113px;
-}
-
-.form .to-next {
-    display: inline-block;
-    font-size: 24px;
-    font-weight: 400;
-    padding: 10px 0px 0px 36px;
-}
-
-.line-red {
-    background-color: red;
-}
-
-.line-yellow {
-    background-color: yellow;
-}
-
-.line-green {
-    background-color: green;
-}
-
-.form input[type="checkbox"] {
-    width: 15%;
-    height: 27px;
-    position: absolute;
-}
-
-.image-container {
-    height: 740px;
-}
-
-.image {
-    background-image: url(../img/Rysunek_1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    ;
-}
-
-.enabledLink {
-    color: green;
-}
-
-.enabledLink:hover {
-    color: forestgreen;
-}
-
-
-/*Form Construct 2 Styles*/
-
-.image-2 {
-    background-image: url(../img/Rysunek_2.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-}
-
-.construct-2 p:first-child {
-    margin-top: 115px;
-    color: red;
-    font-size: 55px;
-}
-
-.construct-2 p:nth-child(2) {
-    font-size: 30px;
-    text-align: justify;
-}
-
-
-/*Form Construct 2 Styles End*/
-
-
-/*Form Construct Styles End*/
-
-
-/*Form Password Strength Styles*/
-
-.smartfon-container {
-    height: 540px;
-    width: 330px;
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    border: 5px solid black;
-    border-radius: 10%;
-    background-color: cadetblue;
-}
-
-.main-container-two {
-    background-color: rgba(211, 211, 211, 0.2);
-    height: 100%;
-}
-
-.smartfon-screen {
-    height: 440px;
-    width: 90%;
-    top: 46px;
-    bottom: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    background-color: lightblue;
-    border-radius: 3%;
-}
-
-.smartfon-button {
-    position: absolute;
+#label-width-1 {
     width: 20%;
-    text-align: center;
-    height: 32px;
-    border: 3px solid black;
-    background-color: #ffe766;
-    border-radius: 25%;
-    top: 93%;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-.smartfon-form {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-    line-height: 50px;
+#label-width-4 {
+    width: 30%;
 }
 
-.smartfon-form p {
-    line-height: normal;
+#label-width-9 {
+    width: 20%;
 }
 
-.smartfon-form input {
-    width: 100%;
-}
-
-.smartfon-form {
-    font-size: 18px;
-}
-
-.password-strength p {
-    font-size: 18px;
-}
-
-.smartfon-form .password-strength .line {
-    width: 53px;
-    margin-left: 3px;
-}
-
-
-/*Form Password Strength Styles End*/
-
-
-/*History Styles*/
-
-#content h2 {
-    font-weight: 700;
-    text-align: center;
-    text-decoration: underline;
-    text-align: justify;
-    font-size: 23px;
-    margin-bottom: 55px;
-    text-align: center;
-}
-
-
-/* Main content area */
-
-#content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-
-/* Slots for final card positions */
-
-#cardSlots {
-    margin: 50px auto 0 auto;
-    background-image: linear-gradient(120deg, #4ca1af 0%, #c4e0e5 100%);
-}
-
-
-/* The initial pile of unsorted cards */
-
-#cardPile {
-    margin: 0 auto;
-    background-image: linear-gradient(120deg, #4ca1af 0%, #c4e0e5 100%);
-}
-
-#cardSlots,
-#cardPile {
-    width: 1000px;
-    height: 230px;
-    padding: 20px;
-    border: 2px solid #333;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-    box-shadow: 0 0 .3em rgba(0, 0, 0, .8);
-}
-
-
-/* Individual cards and slots */
-
-#cardSlots div,
-#cardPile div {
-    float: left;
-    width: 230px;
-    height: 185px;
-    padding: 10px;
-    padding-bottom: 0;
-    border: 2px solid #333;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    margin: 0 0 0 10px;
-    background-color: lightblue;
-}
-
-#cardSlots div:first-child,
-#cardPile div:first-child {
-    margin-left: 0;
-}
-
-#cardSlots div.hovered {
-    background: #aaa;
-}
-
-#cardSlots div {
-    border-style: dashed;
-}
-
-#cardPile div {
-    background-color: lightblue;
-    color: black;
-    font-size: 17px;
-    text-align: center;
-}
-
-#cardPile div.ui-draggable-dragging {
-    -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-    -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-    box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
-}
-
-
-/* Individually coloured cards */
-
-#card1.correct {
-    background: palevioletred;
-}
-
-#card2.correct {
-    background: lightgreen;
-}
-
-#card3.correct {
-    background: orangered;
-}
-
-#card4.correct {
-    background: aquamarine;
-}
-
-
-/* "You did it!" message */
-
-#successMessage {
-    position: absolute;
-    left: 580px;
-    top: 250px;
-    width: 0;
-    height: 0;
-    z-index: 100;
-    background: #dfd;
-    border: 2px solid #333;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    -moz-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-    -webkit-box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-    box-shadow: .3em .3em .5em rgba(0, 0, 0, .8);
-    padding: 20px;
-}
-
-
-/*History Styles End*/
-
-
-/*Form Password Strength End*/
-
-
-/*Danger Styles*/
-
-#danger h3 {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    text-decoration: underline;
-    padding-bottom: 45px;
-}
-
-#danger .row .col-md-4 {
-    margin-bottom: 30px;
-}
-
-#danger-paragraphs p {
-    font-size: 20px;
-}
-
-#danger-paragraphs div {
-    margin-top: 5px;
-    height: 50px;
-    border: 3px solid black;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-}
-
-
-/*Danger Styles End*/
-
-
-/*Safe Smartfon Styles*/
-
-.safe-smartfon-header {
-    font-size: 30px;
-    font-weight: 700;
-    text-align: center;
-}
-
-#container-safe-smartfon {
-    margin: 34px;
-}
-
-.main-smartfon-container {
-    height: 600px;
-    position: relative;
-}
-
-.smartfon-container-2 {
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    height: 640px;
-    width: 330px;
-    border: 5px solid black;
-    border-radius: 10%;
-    background-color: cadetblue;
-}
-
-.smartfon-screen-2 {
-    height: 84%;
-    width: 90%;
-    top: 46px;
-    bottom: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    background-color: lightblue;
-    border-radius: 3%;
-}
-
-.smartfon-form img {
-    height: 120px;
-    width: 120px;
-    display: inline-block;
-    border-radius: 10%;
-    text-align: center;
-    margin: 5px 69px 0 69px;
-}
-
-.icons-container {
-    height: 100%;
-    width: 100%;
-}
-
-.icons-container img {
-    margin: 16px;
-    height: 120px;
-    width: 120px;
-    display: inline-block;
-    border-radius: 10%;
-    cursor: pointer;
-}
-
-
-/*Safe Smartfon Styles End*/
-
-
-/*Safe Loggin Styles*/
-
-.main-message-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 570px;
-    width: 400px;
-}
-
-#warning {
-    color: red;
-    margin-top: 105px;
-    text-align: center;
-}
-
-#new-message {
-    text-align: center;
-    margin-top: 120px;
-    font-size: 32px;
-}
-
-.show-message {
-    font-size: 20px;
-    text-align: justify;
-}
-
-#verify {
-    display: block;
-    text-align: center;
-}
-
-.message-icon {
-    position: absolute;
-    background-image: url(../img/icon_14.jpg);
-    border: 3px solid deepskyblue;
-    background-size: cover;
-    left: 50%;
-    top: 57%;
-    transform: translate(-50%, -50%);
-    height: 232px;
-    width: 300px;
-    border-radius: 15%;
-}
-
-.fa-times {
-    text-align: right;
-    display: inline-block;
-    width: 100%;
-}
-
-
-/*Safe Loggin Styles End*/
-
-
-/*Tools Style*/
-
-#tools h4 {
-    font-size: 32px;
-    font-weight: 700;
-    text-align: center;
-    padding-bottom: 45px;
-}
-
-#tools-paragraphs .show-paragraphs {
-    margin-top: 20px;
-    height: 50px;
-    border: 3px solid black;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    text-decoration: underline;
-    /* transition: all 1s;*/
-    cursor: pointer;
-    color: blue;
-}
-
-#tools-paragraphs .show-paragraphs p:hover {
-    color: deepskyblue;
-}
-
-#danger-paragraphs .animate-paragraphs.success {
-    border-color: green;
-}
-
-#danger-paragraphs .animate-paragraphs.fail {
-    border-color: red;
-}
-
-.make-it-red {
-    color: red;
-}
-
-
-/*Tools Style End*/
+    /*Safe Smartfon Styles End*/
+    /*Safe Loggin Styles*/
+    
+    .main-message-container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 570px;
+        width: 400px;
+    }
+    
+    #warning {
+        color: red;
+        margin-top: 105px;
+        text-align: center;
+    }
+    
+    #new-message {
+        text-align: center;
+        margin-top: 120px;
+        font-size: 32px;
+    }
+    
+    .show-message {
+        font-size: 20px;
+        text-align: justify;
+    }
+    
+    #verify {
+        display: block;
+        text-align: center;
+    }
+    
+    .message-icon {
+        position: absolute;
+        background-image: url(../img/icon_14.jpg);
+        border: 3px solid deepskyblue;
+        background-size: cover;
+        left: 50%;
+        top: 57%;
+        transform: translate(-50%, -50%);
+        height: 232px;
+        width: 300px;
+        border-radius: 15%;
+    }
+    
+    .fa-times {
+        text-align: right;
+        display: inline-block;
+        width: 100%;
+    }
+    /*Safe Loggin Styles End*/
+    /*Tools Style*/
+    
+    #tools h4 {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 45px;
+    }
+    
+    #tools-paragraphs .show-paragraphs {
+        margin-top: 20px;
+        height: 50px;
+        border: 3px solid black;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        text-decoration: underline;
+        /* transition: all 1s;*/
+        cursor: pointer;
+        color: blue;
+    }
+    
+    #tools-paragraphs .show-paragraphs p:hover {
+        color: deepskyblue;
+    }
+    
+    #danger-paragraphs .animate-paragraphs.success {
+        border-color: green;
+    }
+    
+    #danger-paragraphs .animate-paragraphs.fail {
+        border-color: red;
+    }
+    
+    .make-it-red {
+        color: red;
+    }
+    /*Tools Style End*/
